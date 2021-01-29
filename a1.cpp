@@ -5,9 +5,9 @@
 // Student Info
 // ------------
 //
-// Name : <put your full name here!>
-// St.# : <put your full SFU student number here>
-// Email: <put your SFU email address here>
+// Name : Alexander Soames
+// St.# : 301 292 794
+// Email: asoames@sfu.ca
 //
 //
 // Statement of Originality
@@ -31,19 +31,15 @@
 
 using namespace std;
 
-//
 // ... write your functions here ...
-//
 
-//
+
+
 // ... put your test functions here (one test function for each 
 //     function above) ... 
-// 
 
 int main() {
   cout << "Assignment 1!\n";
 
-  //
   // ... call your test functions here ...
-  //
 }
