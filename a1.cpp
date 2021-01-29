@@ -22,6 +22,8 @@
 //
 /////////////////////////////////////////////////////////////////////////
 
+//Only str_list I was able to find https://rextester.com/LPIH38171
+
 #include "a1.h"
 #include "cmpt_error.h"
 #include <iostream>      // no other #includes are allowed
@@ -33,7 +35,12 @@ using namespace std;
 
 // ... write your functions here ...
 str_list make_new(int cap = 5){
-	
+	cout << "cap: " << cap << "\n";
+	str_list a;
+	a.resize(cap);
+	cout << "size: " << a.size << "\n";
+	cout << "capacity: " << a.capacity << "\n";
+	return a;
 }
 
 
@@ -42,6 +49,7 @@ str_list make_new(int cap = 5){
 
 int main() {
   cout << "~~~Assignment 01~~~\n";
+  make_new();
 
   // ... call your test functions here ...
 }
