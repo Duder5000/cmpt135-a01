@@ -32,14 +32,16 @@
 using namespace std;
 
 // ... write your functions here ...
-
+str_list make_new(int cap = 5){
+	
+}
 
 
 // ... put your test functions here (one test function for each 
 //     function above) ... 
 
 int main() {
-  cout << "Assignment 1!\n";
+  cout << "~~~Assignment 01~~~\n";
 
   // ... call your test functions here ...
 }
