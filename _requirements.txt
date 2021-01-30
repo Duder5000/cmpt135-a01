@@ -21,19 +21,6 @@ void make_new_test() {
 
 ## Questions
 
-1. Write a function that makes a new empty `str_list` of size 0 and capacity
-   `cap`. It should have this header:
-
-   ```cpp
-   str_list make_new(int cap = 5)
-   ```
-
-   For example, calling `make_new(50)` returns a new `str_list` of size
-   0 and capacity 50, and calling `make_new()` returns a new `str_list`
-   object of size 0 and capacity 5.
-
-   Remember to create a function called `make_new_test()` to test that
-   `make_new` works correctly.
 
 2. Implement this function:
 

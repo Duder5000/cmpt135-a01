@@ -35,21 +35,38 @@ using namespace std;
 
 // ... write your functions here ...
 str_list make_new(int cap = 5){
-	cout << "cap: " << cap << "\n";
 	str_list a;
-	a.resize(cap);
-	cout << "size: " << a.size << "\n";
-	cout << "capacity: " << a.capacity << "\n";
+	a.size = 0;
+	a.capacity = cap;
+	
+	cout << "cap: " << cap << ", a.size: " << a.size << ", a.capacity: " << a.capacity << "\n";
 	return a;
 }
 
+void deallocate(str_list& arr){
+	//http://www.cplusplus.com/reference/new/operator%20delete[]/
+
+	delete[] arr;
+	arr = nullptr;
+}
 
 // ... put your test functions here (one test function for each 
 //     function above) ... 
 
 int main() {
   cout << "~~~Assignment 01~~~\n";
-  make_new();
+
+  str_list *apple = new str_list[0];
+  delete[] apple;
+  apple = nullptr;
+
+  str_list *banana = new str_list[0];
+  banana = make_new(50);
+  deallocate(banana);
+  delete[] banana;
+  banana = nullptr;
 
   // ... call your test functions here ...
+
+
 }
